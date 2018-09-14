@@ -4,15 +4,13 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="cryptojs.js"></script>
-	<script src="node_modules/crypto-js/crypto-js.js"></script>
-	<script data-main="scripts" src="scripts/require.js"></script>
 	<title>Hyckon Hackathon dApp</title>
 </head>
 <body>
-	<h1></h1>
-		 <fieldset>
-			<legend>Video</legend>
-			
+	<p>
+		<h1 align="center">Blockchain verification of digital evidence</h1>
+	</p>
+		 <fieldset>			
 			<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file -->
 
 			<!-- <div>
@@ -22,9 +20,13 @@
 		
 			<div>							
 				<!-- <label for="avatar">Profile picture:</label> -->
-				<input type='file' accept='image/*' onchange="fetchVideo(event)"><br>	
+				<input type='file' accept='image/*' onchange="fetchVideo(event)" class="label"><br>	
 				<img id='output'>
-			<button onclick="fetchVideo(event)">Hash</button>
 		</fieldset>			
 </body>
+
+<footer id=footer class="center">
+	<img src="images/ETH.png">
+</footer>
+
 </html>
