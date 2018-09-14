@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="cryptojs.js"></script>
+	<script src="node_modules/crypto-js/crypto-js.js"></script>
+	<script data-main="scripts" src="scripts/require.js"></script>
+	<title>Hyckon Hackathon dApp</title>
 </head>
 <body>
-	<h1>hello</h1>
-	<button id="sendTX">claim recycle btc</button>
+	<h1></h1>
+		 <fieldset>
+			<legend>Video</legend>
+			
+			<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file -->
+
+			<!-- <div>
+				<label for="name">Display name:</label>
+				<input type="text" id="name" name="name"/>
+			</div> -->
+		
+			<div>							
+				<!-- <label for="avatar">Profile picture:</label> -->
+				<input type='file' accept='image/*' onchange="fetchVideo(event)"><br>	
+				<img id='output'>
+			<button onclick="fetchVideo(event)">Hash</button>
+		</fieldset>			
 </body>
 </html>
